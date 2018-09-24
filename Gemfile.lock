@@ -385,6 +385,11 @@ GEM
     pry-byebug (3.6.0)
       byebug (~> 10.0)
       pry (~> 0.10)
+    pry-doc (0.13.4)
+      pry (~> 0.11)
+      yard (~> 0.9.11)
+    pry-rails (0.3.6)
+      pry (>= 0.10.4)
     public_suffix (3.0.3)
     puma (3.12.0)
     rack (2.0.5)
@@ -640,6 +645,7 @@ GEM
       nokogiri (~> 1.5)
     xpath (3.1.0)
       nokogiri (~> 1.8)
+    yard (0.9.16)
     zonebie (0.6.1)
     zxcvbn-js (4.4.3)
       execjs
@@ -701,6 +707,8 @@ DEPENDENCIES
   premailer-rails
   proofer!
   pry-byebug
+  pry-doc
+  pry-rails
   puma
   rack-attack
   rack-cors
