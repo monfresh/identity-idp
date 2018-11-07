@@ -27,6 +27,7 @@ module Users
       analytics.track_event(Analytics::PHONE_DELETION_REQUESTED, result.to_h)
       if result.success?
         flash[:success] = t('two_factor_authentication.phone.delete.success')
+        create_user_event(:phone_removed)
       else
         flash[:error] = t('two_factor_authentication.phone.delete.failure')
       end
